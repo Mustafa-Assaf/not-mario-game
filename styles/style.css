@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./backgroundimage.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* the same box across the three main pages */
+.screen-box {
+    width: 70vw;
+    height: 70vh;
+    box-sizing: border-box;
+
+    border: 6px dashed lightgreen;
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+/* the first page - the start */
+#start-screen .screen-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-screen h1 {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 2px 3px 0 black;
+    margin-bottom: 24px;
+}
+
+#start-screen p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    font-weight: bold; 
+    text-decoration: underline;
+}
+
+/* .blue-text {
+    font-weight: bold;
+    text-decoration: underline;
+} */
+
+/* the game box */
+#game-box {
+    position: relative;
+
+    background-image: url("./backgroundimage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#game-box * {
+    pointer-events: none;
+}
+
+
+/* buttons: */
+
+#start-btn{
+    background-color: #7CFC00;
+    color: #173B13;
+    padding: 16px 32px; 
+    font-size: 18px; 
+    margin-top: 16px; 
+    border: 2px solid #4d9e00;
+    border-radius: 999px; 
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#start-btn:hover {
+    background-color: #38BDF8;
+    border-color: #168AC0;
+    box-shadow: 0 4px 0 #168AC0;
+}
+
+#restart-btn{
+    background-color: red;
+    color: white;
+    padding: 16px 32px; 
+    font-size: 18px; 
+    margin-top: 16px; 
+    border: 2px solid lightcoral;
+    border-radius: 999px; 
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#restart-btn:hover {
+    background-color: red;
+    border-color: lightcoral;
+    box-shadow: 0 4px 0 coral;
+}
+#main-menu-btn{
+    background-color: lightgreen;
+    color: white;
+    padding: 16px 32px; 
+    font-size: 18px; 
+    margin-top: 16px; 
+    border: 2px solid yellow;
+    border-radius: 999px; 
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#main-menu-btn:hover {
+    background-color: lightgreen;
+    border-color: green;
+    box-shadow: 0 4px 0 lightgreen;
+}
+
+#coin-counter {
+    background-color: red; 
+    color: white; 
+    border: 2px dotted pink;
+    padding: 16px 32px; 
+    border-radius: 999px;
+    cursor: pointer; 
+    margin-top: 16px;
+    width: 200px;
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+}
+
+#coin-counter img {
+    display: block;
+    width: 20px;
+    height: 25px; 
+    object-fit: contain;
+}
+
+/* //window.location.reload() */
+
+/* internval timeouts for making Mario jump. those intervals are a part of a timeout. So the itnerval takes him up then the timeout stops the jump. inside of timeout to jump once it ends, you start a new timeout, that will run the same amount of time. once you press jump you need to disable the jump button so you dont have infinite jumps. */
+
+
+
+
+
+
+
+
+#game-over-screen .screen-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+
+#game-screen,
+#game-over-screen {
+    display: none;
+}

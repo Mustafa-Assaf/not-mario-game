@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario Coin Runner</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+<!--START SCREEN-->
+
+
+<div id="start-screen" class="container">
+    <div class="screen-box">
+        <h1>(not) Mario Running!</h1>
+        <button id="start-btn">Start Game</button>
+        <p>(Copyright infringement notice: not actually Mario. Nintendo pls <span class="blue-text">don't sue us</span> )</p> 
+    </div>
+</div>
+
+<!-- add emoji here in paragraph above -->
+
+<!--GAME SCREEN -->
+<div id = "game-screen" class="container">
+    <div id = "game-box" class="screen-box">
+        <div id="coin-counter">
+        <img src="./styles/brownbox.png">
+        <span id ="boxes-count"></span>
+        </div>
+    </div>
+</div>
+<!-- //add a game box with the same class. Content needs to attach to the box, which is consistent across the three pages.  -->
+
+<!--GAME-OVER SCREEN -->
+
+<div id = "game-over-screen" class="container">
+    <div class="screen-box">
+    <h2>"Oh, no!"</h2>
+    <p>"Waaaahhhhhh"</p>
+    <button id="restart-btn">Play Again</button>
+    <button id ="main-menu-btn">Main Menu</button>
+    </div>
+</div>
+
+<script src="./js/player.js"></script>
+<script src="./js/redshell.js"></script>
+<script src="./js/brownbox.js"></script>
+<script src="./js/yellowbox.js"></script>
+<script src = "./js/main.js"></script>
+
+</body>
